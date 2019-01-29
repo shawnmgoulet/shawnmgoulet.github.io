@@ -1,2 +1,2 @@
-# sgoulet.github.io
-Personal Site *In Development*
+# Shawn M. Goulet's Personal Site
+Welcome to my personal site served up via netlify.
