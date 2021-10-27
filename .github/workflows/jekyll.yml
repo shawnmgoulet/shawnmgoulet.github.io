@@ -6,11 +6,12 @@ on:
       - dev
 
 jobs:
-  github-pages:
+  Build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repo code
       - uses: actions/checkout@v2
-      - uses: helaili/jekyll-action@v2
+      - name: Deploy site to master
+      - uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           target_branch: 'master'
